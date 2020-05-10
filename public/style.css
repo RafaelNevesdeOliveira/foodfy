@@ -1,0 +1,211 @@
+@import "https://fonts.googleapis.com/css?family=Roboto&display=swap";
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    background-color: white;
+    width: 940px;
+    margin: 0px auto;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+
+}
+
+/*** Cabeçalho ***/
+header{
+    height: 93px;
+    width: 940px;
+
+}
+
+.links{
+    display: grid;
+    grid-template-columns: 210px 1fr;
+
+}
+
+.links a:hover{
+    color: purple;
+    font-weight: bold;
+    transition: color 200ms;
+}
+
+.logo{
+    margin: 36.1px 122.4px 30px auto;
+    height: 26.9px;
+    width:  90.6px;
+}
+
+.menu{
+    margin: 38px 0px
+}
+
+.menu a{
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 38px 30px 38px auto;
+}
+
+/*** CORPO***/
+
+.info{
+    background-color: #FBDFDB;
+    border-radius: 30px;
+    width: 940px;
+    height: 366px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    left: auto;
+}
+
+.info h2{
+    font-size: 32px;
+    width: 305px;
+    height: 38px;
+    padding: 117px 259px 10px 60px;
+}
+
+.info p{
+    font-size: 18px;
+    width: 316px;
+    height: 84px;
+    padding: 10px 259px 117px 60px;
+}
+
+.picture img{
+    width: 216px;
+    height: 300px;
+    padding: 66px 100px 0px 0px;
+}
+
+/*** CARDS ***/
+
+.wrapper h1{
+    height: 28px;
+    font-size: 24px;
+    padding: 50px 0px 20px 0px;
+    font-weight: bold;
+}
+
+.images{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.image img{
+    width: 300px;
+    height: 140px;
+    border-radius: 15px 15px;
+}
+
+.image h5{
+    font-size: 18px;
+    padding: 20px 0px 5px 0px;
+}
+
+.image p{
+    font-size: 14px;
+    padding: 0px 0px 30px 0px;
+    color: #777777;
+}
+
+.footer{
+    background-color: #eeeeee;
+    width: 100%;
+    height: 62px;
+    margin-top: auto;
+}
+
+.footer p{
+    text-align: center;
+    padding: 23px;
+    color: #999999;
+    font-size: 14px;
+}
+
+
+/*** TEXT ***/
+
+.text h1{
+    font-size: 24px;
+    padding: 50px 0px 20px 0px;
+}
+
+.text p{
+    font-size: 18px;
+    text-align: justify;
+}
+
+/***MODAL***/
+
+.modal-overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height:100%;
+    position: fixed;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal {
+    background-color: white;
+    width: 90%;
+    max-width:660px;
+    height:413px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    margin: 25vh auto;
+    position: relative;
+    padding: 30px;
+    text-align: center;
+} 
+
+.modal .modal-content img{
+    width: 100%;
+    height:200px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+
+.close-modal {
+    font-size: 16px;
+    background-color: white;
+    color: rgb(143, 142, 142);
+    margin-top: 60px;
+    cursor: pointer;
+    opacity: 70%;
+
+}
+
+.modal-overlay.active {
+    opacity: 1; 
+    visibility: visible;
+    left: 0.001px;
+    width: 100%; 
+}
+
+.modal-info h5{
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.modal-info p{
+    color: #777777;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+

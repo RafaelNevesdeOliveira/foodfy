@@ -1,0 +1,68 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+
+<title>Foodfy - Home </title>
+
+{% endblock %}
+
+{% block content %}
+
+<div class="info">
+    <div class="text">
+        <h2>As melhores receitas</h2>
+        <p>Aprenda a construir os melhores pratos com receitas criadas por profissionais do mundo inteiro.</p>
+    </div>
+
+    <div class="picture">
+        <img src="/assets/chef.png" alt="chef">
+    </div>
+</div>
+
+<main class="wrapper">
+    <h1>Mais Acessadas</h2>
+
+        <div class="images">
+            <div class="image">
+                <img src="/assets/burger.png" alt="burger">
+                <h5>Triplo bacon Burger</h5>
+                <p>por Jorge Relato</p>
+            </div>
+
+            <div class="image">
+                <img src="/assets/pizza.png" alt="burger">
+                <h5>Pizza 4 estações</h5>
+                <p>por Fabiana Melo</p>
+            </div>
+
+            <div class="image">
+                <img src="/assets/espaguete.png" alt="burger">
+                <h5>Espaguete ao alho</h5>
+                <p>por Juliana Kinoto</p>
+            </div>
+
+            <div class="image">
+                <img src="/assets/lasanha.png" alt="burger">
+                <h5>Lasanha mac n' cheese</h5>
+                <p>por Juliano Vieira</p>
+            </div>
+
+            <div class="image">
+                <img src="/assets/doce.png" alt="burger">
+                <h5>Docinhos pão-do-céu</h5>
+                <p>por Ricardo Golvea</p>
+            </div>
+
+            <div class="image">
+                <img src="/assets/asinhas.png" alt="burger">
+                <h5>Asinhas de frango ao barbecue</h5>
+                <p>por Vania Steroski</p>
+            </div>
+        </div>
+</main>
+
+<footer class="footer">
+    <p>Todos os direitos reservados, receitas Foodfy</p>
+</footer>
+
+{% endblock %}

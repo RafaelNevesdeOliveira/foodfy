@@ -1,2 +1,6 @@
-# Foodfy
- Projeto Launchbase - Rocketseat
+# Foodfy #
+---
+## Tarefas ##
+- [x] Front End
+- [ ] Back End
+- [ ] Data Bank
