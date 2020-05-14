@@ -2,73 +2,39 @@
 
 {% block head %}
 
-
-<title>Foodfy - Receitas</title>
+    <title>Foodfy - Receitas</title>
 
 {% endblock %}
 
 {% block content %}
 
-<main class="wrapper">
-    <div class="images">
+    <main class="wrapper">
 
-        <div class="image" id="burger.png">
-            <img src="/assets/burger.png" alt="burger">
-            <h5>Triplo bacon Burger</h5>
-            <p>por Jorge Relato</p>
+        <div class="images">
+            {% for item in items %}
+                <div class="image" id="{{item.id}}">
+                    <img src="{{item.image_path}}" alt="Imagem de {{item.title}}">
+                    <h5>{{item.title}}</h5>
+                    <p>{{item.author}}</p>
+                </div>
+            {% endfor %}
         </div>
 
-        <div class="image" id="pizza.png">
-            <img src="/assets/pizza.png" alt="burger">
-            <h5>Pizza 4 estações</h5>
-            <p>por Fabiana Melo</p>
-        </div>
+    </main>
 
-        <div class="image" id="espaguete.png">
-            <img src="/assets/espaguete.png" alt="burger">
-            <h5>Espaguete ao alho</h5>
-            <p>por Juliana Kinoto</p>
-        </div>
-
-        <div class="image" id="lasanha.png">
-            <img src="/assets/lasanha.png" alt="burger">
-            <h5>Lasanha mac n' cheese</h5>
-            <p>por Juliano Vieira</p>
-        </div>
-
-        <div class="image" id="doce.png">
-            <img src="/assets/doce.png" alt="burger">
-            <h5>Docinhos pão-do-céu</h5>
-            <p>por Ricardo Golvea</p>
-        </div>
-
-        <div class="image" id="asinhas.png">
-            <img src="/assets/asinhas.png" alt="burger">
-            <h5>Asinhas de frango ao barbecue</h5>
-            <p>por Vania Steroski</p>
+    <div class="modal-overlay">
+        <div class="modal">
+            <div class="modal-content">
+                <img src="" alt="">
+            </div>
+            <div class="modal-info">
+                <h5></h5>
+                <p></p>
+                <button class="close-modal">Fechar modal</button>
+            </div>
         </div>
     </div>
-</main>
 
-<footer class="footer">
-    <p>Todos os direitos reservados, receitas Foodfy</p>
-</footer>
-
-<div class="modal-overlay">
-    <div class="modal">
-        <div class="modal-content">
-            <img src="" alt="">
-        </div>
-        <div class="modal-info">
-            <h5></h5>
-            <p></p>
-            <button class="close-modal">Fechar modal</button>
-        </div>
-    </div>
-</div>
-
-
-<script src="/script.js"></script>
-
+    <script src="/script.js"></script>
 
 {% endblock %}

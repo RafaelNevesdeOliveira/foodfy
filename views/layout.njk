@@ -1,29 +1,33 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon"/>
 
-<head>
+    <head>
 
-    {% block head %}
-    <title>Foodfy</title>
-    {% endblock %}
+        {% block head %}
+            <title>Foodfy</title>
+        {% endblock %}
 
-    <link rel="stylesheet" href="/style.css">
-</head>
+        <link rel="stylesheet" href="/style.css">
+    </head>
 
-<body>
-    <header>
-        <div class="links">
-            <a href="/"><img class="logo" src="/assets/logo.png" alt="logo"></a>
-            <div class="menu">
-                <a href="/about">Sobre</a>
-                <a href="/recipes">Receitas</a>
+    <body>
+        <header>
+            <div class="links">
+                <a href="/"><img class="logo" src="/assets/logo.png" alt="logo"></a>
+                <div class="menu">
+                    <a href="/about">Sobre</a>
+                    <a href="/recipes">Receitas</a>
+                </div>
             </div>
-        </div>
-    </header>
+        </header>
 
-    {% block content %} {% endblock %}
+        {% block content %}{% endblock %}
 
-</body>
+        <footer class="footer">
+            <p>Todos os direitos reservados, receitas Foodfy</p>
+        </footer>
+
+    </body>
 
 </html>

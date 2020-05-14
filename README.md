@@ -2,5 +2,5 @@
 ---
 ## Tarefas ##
 - [x] Front End
-- [ ] Back End
+- [x] Back End - Andamento
 - [ ] Data Bank

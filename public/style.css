@@ -11,9 +11,7 @@ body {
     width: 940px;
     margin: 0px auto;
     font-family: 'Roboto', sans-serif;
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
+
 
 }
 
@@ -21,7 +19,6 @@ body {
 header{
     height: 93px;
     width: 940px;
-
 }
 
 .links{
@@ -118,16 +115,15 @@ header{
     color: #777777;
 }
 
-.footer{
-    background-color: #eeeeee;
-    width: 100%;
-    height: 62px;
-    margin-top: auto;
+/***FOOTER***/
+footer {
+    text-align: center;
+    padding: 23px 0;
+    background-color: #EEEEEE;
+
 }
 
-.footer p{
-    text-align: center;
-    padding: 23px;
+footer p {
     color: #999999;
     font-size: 14px;
 }
@@ -137,12 +133,17 @@ header{
 
 .text h1{
     font-size: 24px;
-    padding: 50px 0px 20px 0px;
+    padding: 30px 0px 20px 0px;
 }
 
 .text p{
     font-size: 18px;
     text-align: justify;
+
+}
+
+.third-info p{
+    margin-bottom: 40px;
 }
 
 /***MODAL***/
