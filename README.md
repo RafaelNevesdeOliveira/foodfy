@@ -1,6 +1,6 @@
 # Foodfy #
 ---
 ## Tarefas ##
-- [x] Front End
+- [x] Front End - Andamento
 - [x] Back End - Andamento
-- [ ] Data Bank
+- [ ] Data Bank - Não iniciado
