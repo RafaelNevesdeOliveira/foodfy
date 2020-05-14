@@ -14,7 +14,9 @@ nunjucks.configure("views", {
 })
 
 server.get("/", function(req, res){
-    return res.render("home")
+    
+    
+    return res.render("home", {items: pages})
 })
 
 server.get("/about", function(req, res){

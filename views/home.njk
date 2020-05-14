@@ -20,9 +20,10 @@
         </div>
     </div>
 
-    <main class="wrapper">
+    <main class="wrapper-home">
+        <h1>Mais acessadas</h1>
 
-        <div class="images">
+        <div class="images-home">
             {% for item in items %}
                 <div class="image" id="{{item.id}}">
                     <img src="{{item.image_path}}" alt="Imagem de {{item.title}}">
@@ -33,5 +34,22 @@
         </div>
 
     </main>
+
+    <div class="modal-overlay">
+        <div class="modal">
+            <div class="modal-content">
+                <img src="" alt="">
+            </div>
+            <div class="modal-info">
+                <h5></h5>
+                <p></p>
+                <button class="close-modal">Fechar modal</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="/script.js"></script>
+
+
 
 {% endblock %}
