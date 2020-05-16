@@ -4,21 +4,49 @@ const images = document.querySelectorAll('.image')
 for(let image of images){
     image.addEventListener("click", function(){
         const imageId = image.getAttribute('id');
-        const titulo = image.querySelector("h5").innerHTML;
-        const dono = image.querySelector("p").innerHTML;
-
-        modalOverlay.classList.add('active');
-
-        modalOverlay.querySelector('img').src=`assets/${imageId}`;
-        modalOverlay.querySelector('h5').innerHTML=`${titulo}`;
-        modalOverlay.querySelector('p').innerHTML=`${dono}`;
+        window.location.href = `/recipe_page?id=${imageId}`
     
     })
 }
 
-document.querySelector(".close-modal").addEventListener("click",function(){
-    modalOverlay.classList.remove('active')
-    modalOverlay.querySelector('img').src=""
-})
+function showContent_1(el) {
+    var display = document.getElementById(el).style.display;
+    var botao = document.getElementById("meuBotao1");
 
-        
+    if(display == "none") {
+        document.getElementById(el).style.display = 'block';
+        botao.innerHTML = "Esconder Conteúdo";
+    }
+    else {
+        document.getElementById(el).style.display = 'none';
+        botao.innerHTML = "Mostrar Conteúdo";
+    }
+}
+
+function showContent_2(el) {
+    let display = document.getElementById(el).style.display;
+    let botao = document.getElementById("meuBotao2");
+
+    if(display == "none") {
+        document.getElementById(el).style.display = 'block';
+        botao.innerHTML = "Esconder Conteúdo";
+    }
+    else {
+        document.getElementById(el).style.display = 'none';
+        botao.innerHTML = "Mostrar Conteúdo";
+    }
+}
+
+function showContent_3(el) {
+    let display = document.getElementById(el).style.display;
+    let botao = document.getElementById("meuBotao3");
+
+    if(display == "none") {
+        document.getElementById(el).style.display = 'block';
+        botao.innerHTML = "Esconder Conteúdo";
+    }
+    else {
+        document.getElementById(el).style.display = 'none';
+        botao.innerHTML = "Mostrar Conteúdo";
+    }
+}
