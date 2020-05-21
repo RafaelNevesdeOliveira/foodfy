@@ -59,9 +59,29 @@ header{
     height: 366px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    align-items: center;
-    left: auto;
+
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.2);
+
+    opacity: 0;
+
+    animation-name: up;
+    animation-duration: 700ms;
+    animation-timing-function: ease-out;
+    animation-delay: 0.2s;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+  
 }
+
+@keyframes up{
+    from{
+        transform: translateX(15px);
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 
 .info h2{
     font-size: 32px;
@@ -116,6 +136,27 @@ header{
 }
 
 /***HOME***/
+
+.wrapper-home{
+    opacity: 0;
+
+    animation-name: up;
+    animation-duration: 700ms;
+    animation-timing-function: ease-out;
+    animation-delay: 0.2s;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+
+}
+
+@keyframes up{
+    from{
+        transform: translateX(15px);
+    }
+    to {
+        opacity: 1;
+    }
+}
 
 .wrapper-home h1{
     height: 28px;
