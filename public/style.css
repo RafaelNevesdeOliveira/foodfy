@@ -116,6 +116,7 @@ header{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
+
 }
 
 .image img{
@@ -163,6 +164,7 @@ header{
     font-size: 24px;
     padding: 50px 0px 0px 0px;
     font-weight: bold;
+
 }
 
 .images-home{
@@ -170,6 +172,7 @@ header{
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
     margin-top: 20px;
+    cursor: pointer;
 }
 
 .image-home img{
@@ -196,8 +199,8 @@ footer {
     text-align: center;
     padding: 23px 0;
     background-color: #EEEEEE;
-    width: 100%;
-    position: absolute;
+
+
 }
 
 footer p {
