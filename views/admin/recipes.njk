@@ -1,0 +1,26 @@
+{% extends "admin/layout.njk" %}
+
+{% block head %}
+
+    <title>Foodfy - Home
+    </title>
+
+{% endblock %}
+{% block content %}
+
+    <main class="wrapper-home">
+        <h1>Mais acessadas</h1>
+
+        <div class="images-home">
+            {% for recipe in recipes %}
+                <div class="image-home" id="{{recipe.id}}">
+                    <img src="{{recipe.image_path}}" alt="Imagem de {{recipe.title}}">
+                    <h5>{{recipe.title}}</h5>
+                    <p>{{recipe.author}}</p>
+                </div>
+            {% endfor %}
+        </div>
+
+    </main>
+
+{% endblock %}

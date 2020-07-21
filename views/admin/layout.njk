@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <link rel="icon" href="/assets/favicon.ico" type="image/x-icon"/>
+
+    <head>
+
+        {% block head %}
+            <title>Foodfy</title>
+        {% endblock %}
+
+        <link rel="stylesheet" href="/styles/styleAdmin.css">
+        <link rel="stylesheet" href="/styles/responsive.css">
+
+    </head>
+
+    <body>
+        <header>
+            <div class="links">
+                <a href="/"><img class="logo" src="/assets/logo-black.png" alt="logo"></a>
+                <div class="menu">
+                </div>
+            </div>
+        </header>
+
+        {% block content %}{% endblock %}
+
+    </body>
+
+</html>

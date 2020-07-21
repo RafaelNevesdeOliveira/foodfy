@@ -1,0 +1,62 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+
+    <title>Foodfy - Receitas</title>
+
+{% endblock %}
+
+{% block content %}
+
+    <main class="recipe-page">
+
+        <div class="pages">
+            <div class="page" id="{{item.id}}">
+                <div class="card__page-container">
+                    <img src="{{item.avatar_url}}" alt="Imagem de {{item.title}}">
+                </div>
+
+            <div class="page-title">
+                <h1>{{item.title}}</h1>
+                <p>{{item.author}}</p>
+            </div>
+
+            <div class="page-content">
+                <div class="page-ingredients">
+                    <h2>Ingredientes</h2>
+                    <button id="meuBotao1" type="button" onclick="showContent_1('ingredients')">Esconder Conteúdo</button>
+                    <ul>
+                        <div id='ingredients'>
+                        {% for ingredients in item.ingredients %}
+                            <li>{{ingredients}}</li>
+                        {% endfor %}
+                        </div>
+                    </ul>
+                </div>
+
+                <div class="page-preparation">
+                    <h2>Preparação</h2>
+                    <button id="meuBotao2" type="button" onclick="showContent_2('preparation')">Esconder Conteúdo</button>
+                    <div id='preparation'>
+                        <ul>
+                        {% for preparation in item.preparation %}
+                            <li>{{preparation}}</li>
+                        {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="page-information">
+                    <h2>Informação</h2>
+                    <button id="meuBotao3" type="button" onclick="showContent_3('information')">Esconder Conteúdo</button>
+                    <div id="information">
+                        <p>{{item.information}}</p>
+                    </div>
+                </div>
+
+        </div>
+    </main>
+
+    <script src="/scripts/scriptButton.js"></script>
+
+{% endblock %}
