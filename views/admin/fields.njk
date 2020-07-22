@@ -34,38 +34,37 @@
     </div>
 </div>
 
-<div class="item"> 
-    <p>Ingrediente</p>
-    <div id="ingredients">
+<div class="item" id="ingredients">
+    <p>Ingredientes</p>
+    {% if recipe.ingredients %}
+        {% for ingredient in recipe.ingredients %}
+            <div class="ingredient">
+                <input type="text" value="{{ingredient}}" name="ingredients[]" placeholder="Ingredientes">
+            </div>
+        {% endfor %}
+    {% else %}
         <div class="ingredient">
-            <input 
-                type="text" 
-                name="ingredients[]" 
-                value="{{recipe.ingredients}}" 
-                placeholder=""
-            >
+            <input type="text" value="" name="ingredients[]" placeholder="Ingredientes">
         </div>
-    </div>
-    <button type="button" class="add-ingredient">Adicionar novo Ingrediente
-    </button>
+    {% endif %}
+<button type="button" class="add-ingredient">Adicionar ingrediente</button>
+
 </div>
 
-<div class="item">
+<div class="item" id="preparations">
     <p>Modo de preparo</p>
-    {% for prep in recipe.preparations%}
-    <div id="preparations">
-        <div class="preparation">
-            <input 
-                type="text" 
-                name="preparations[]" 
-                value="{{recipe.preparations}}" 
-                placeholder=""
-            >
-        </div>
-    {% endfor%}
+    {% if recipe.preparations %}
+        {% for preparation in recipe.preparations %}
+            <div class="preparation">
+                <input type="text" value="{{preparation}}" name="preparation[]" placeholder="Modo de preparo">
+            </div>
+        {% endfor %}
+    {% else %}
+    <div class="preparation">
+        <input type="text" value="" name="preparations[]" placeholder="Modo de preparo">
     </div>
-    <button type="button" class="add-preparation">Adicionar novo passo
-    </button>
+    {% endif %}
+    <button type="button" class="add-preparation">Adicionar novo passo</button>
 </div>
 
 <div class="item">

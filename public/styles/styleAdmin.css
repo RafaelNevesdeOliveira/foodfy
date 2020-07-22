@@ -107,7 +107,7 @@ a.button{
 a.button
 {
     padding: 8px 16px;
-    width: 130px;
+    width: 150px;
     height: 37px;
     background-color: #6558C3;
     border-radius: 4px;
@@ -233,4 +233,96 @@ a.button
         width: 137px;
         background-color: #6558C3;
 
+    }
+
+    /***RECIPES ADMIN***/
+
+    .wrapper-home-admin{
+        margin-left: 26%;
+    }
+
+    .wrapper-home-admin-top{
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+        margin-top: 50px;
+    }
+
+    .wrapper-home-admin-top a{
+        margin-left: 325px;
+        padding: 4px 16px;
+        width: 90px;
+        height: 22px;
+        background-color: #6558C3;
+        border-radius: 4px;
+        font-size: 16px ;
+        color: white;
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+
+
+    .wrapper-home-admin h1{
+        height: 28px;
+        font-size: 24px;
+        font-weight: bold;
+    }
+    
+    .images-home{
+   
+        display: grid;
+        grid-template-columns: 500px 500px;
+        gap: 20px;
+        margin-top: 20px;
+    }
+    
+    .details-recipe{
+        display: flex;
+    }
+
+    .info-admin  h5{
+        margin-bottom: 3px;
+        margin-left: 20px;
+
+        font-size: 18px;
+    } 
+
+    .info-admin  p{
+        margin-bottom: 3px;
+        margin-left: 20px;
+
+        font-size: 14px;
+        color: #777777;
+    } 
+
+    .info-admin a{
+        display: block;
+        margin-top: 7px;
+        margin-left: 20px;
+
+        text-decoration: none;
+        font-size: 14px;
+        color: #6558C3;
+        font-weight: bold;
+
+        cursor: pointer;
+    }
+
+    .details-recipe img{
+        width: 172px;
+        height: 80px;
+        border-radius: 8.5px;
+    }
+    
+    .details-recipe h5{
+        font-size: 20px;
+        color: black;
+        padding: 0px;
+    }
+    
+    .details-recipep{
+        font-size: 20px;
+        color: black;
+        padding: 0px;
     }
