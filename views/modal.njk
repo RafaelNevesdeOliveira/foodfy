@@ -12,7 +12,7 @@
 
         <div class="images">
             {% for item in items %}
-                <div class="image" id="{{item.id}}">
+                <div class="image-home" id="{{item.id}}">
                     <img src="{{item.avatar_url}}" alt="Imagem de {{item.title}}">
                     <h5>{{item.title}}</h5>
                     <p>{{item.author}}</p>
@@ -22,6 +22,6 @@
 
     </main>
     
-    <script src="/script.js"></script>
+    <script src="/scripts/scriptHome.js"></script>
 
 {% endblock %}
