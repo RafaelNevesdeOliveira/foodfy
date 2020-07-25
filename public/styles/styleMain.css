@@ -8,8 +8,7 @@
 
 body {
     background-color: white;
-    width: 940px;
-    margin: 0px auto;
+    margin-left: 25%;
     font-family: 'Roboto', sans-serif;
     position: relative;
 
@@ -197,15 +196,15 @@ header{
 /***FOOTER***/
 footer {
     text-align: center;
-    padding: 23px 0;
+    padding: 23px 100px;
     background-color: #EEEEEE;
-
-
+    margin-top:15%;
 }
 
 footer p {
     color: #999999;
     font-size: 14px;
+    text-align: center
 }
 
 

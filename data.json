@@ -39,23 +39,6 @@
       "created_at": 1595390376807
     },
     {
-      "id": 4,
-      "avatar_url": "https://images.unsplash.com/photo-1432139555190-58524dae6a55?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
-      "title": "aaaaaaaaaa",
-      "author": "aaaaaaaaaaaa",
-      "ingredients": [
-        "aaaaaaaaa"
-      ],
-      "preparations": [
-        "aaaaaaaaaa"
-      ],
-      "information": "        ",
-      "created_at": 1595390403839,
-      "preparation": [
-        "aaaaaaaaaa"
-      ]
-    },
-    {
       "id": 5,
       "avatar_url": "https://images.unsplash.com/photo-1546548970-71785318a17b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
       "title": "tensei",

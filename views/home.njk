@@ -25,8 +25,8 @@
 
         <div class="images-home">
             {% for item in items %}
-                <div class="image-home" id="{{item.id}}">
-                    <img src="{{item.avatar_url}}" alt="Imagem de {{item.title}}">
+                <div class="image-home" id="admin/recipes/{{item.id}}">
+                    <img src="{{item.avatar_url}}"  alt="Imagem de {{item.title}}">
                     <h5>{{item.title}}</h5>
                     <p>{{item.author}}</p>
                 </div>
@@ -34,7 +34,7 @@
         </div>
 
     </main>
-
+{# 
     <div class="modal-overlay">
         <div class="modal">
             <div class="modal-content">
@@ -49,7 +49,7 @@
     </div>
 
     <script src="/scripts/scriptHome.js"></script>
-
+ #}
 
 
 {% endblock %}

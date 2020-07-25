@@ -20,14 +20,16 @@
                     <a href="/admin/recipes">Receitas</a>
                 </div>
             </div>
+
+            {% block content %}{% endblock %}
+
+            <footer>
+                <p>Todos os direitos reservados, receitas Foodfy</p>
+            </footer>
         </header>
 
-        {% block content %}{% endblock %}
-
-        <footer>
-            <p>Todos os direitos reservados, receitas Foodfy</p>
-        </footer>
-
     </body>
+
+
 
 </html>
