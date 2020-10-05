@@ -32,6 +32,11 @@ header{
     transition: color 200ms;
 }
 
+.links a.active{
+    font-weight: bold;
+    color: #111111;
+}
+
 .logo{
     margin: 36.1px 122.4px 30px auto;
     height: 26.9px;
