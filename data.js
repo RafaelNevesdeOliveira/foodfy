@@ -1,7 +1,7 @@
 module.exports = [
     {
         id: "burger.png",
-        avatar_url: "/assets/burger.png",
+        image: "/assets/burger.png",
         title: "Triplo bacon Burger",
         author: "por Jorge Relato",
         ingredients: [
@@ -25,7 +25,7 @@ module.exports = [
     },
     {
         id: "pizza.png",
-        avatar_url: "/assets/pizza.png",
+        image: "/assets/pizza.png",
         title: "Pizza 4 estações",
         author: "por Fabiana Melo",
         ingredients: [
@@ -53,7 +53,7 @@ module.exports = [
     },
     {
         id: "espaguete.png",
-        avatar_url: "/assets/espaguete.png",
+        image: "/assets/espaguete.png",
         title: "Espaguete ao alho",
         author: "por Juliana Kinoto",
         ingredients: [
@@ -78,7 +78,7 @@ module.exports = [
     },
     {
         id: "lasanha.png",
-        avatar_url: "/assets/lasanha.png",
+        image: "/assets/lasanha.png",
         title: "Lasanha mac n' cheese",
         author: "por Juliano Vieira",
         ingredients: [
@@ -99,7 +99,7 @@ module.exports = [
     },
     {
         id: "doce.png",
-        avatar_url: "/assets/doce.png",
+        image: "/assets/doce.png",
         title: "Docinhos pão-do-céu",
         author: "por Ricardo Golvea",
         ingredients: [
@@ -122,7 +122,7 @@ module.exports = [
     },
     {
         id: "asinhas.png",
-        avatar_url: "/assets/asinhas.png",
+        image: "/assets/asinhas.png",
         title: "Asinhas de frango ao barbecu",
         author: "por Vania Steroski",
         ingredients: [
