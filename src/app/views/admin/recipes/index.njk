@@ -1,4 +1,4 @@
-{% extends "admin/layout.njk" %}
+{% extends "layoutAdmin.njk" %}
 
 {% block head %}
 
@@ -15,13 +15,13 @@
         </div>
 
         <div class="images-home">
-            {% for item in items %}
-                <div class="details-recipe" id="{{item.id}}">
-                    <img src="{{item.image}}" alt="Imagem de {{item.title}}">
+            {% for recipe in recipes %}
+                <div class="details-recipe" id="{{recipe.id}}">
+                    <img src="{{recipe.image}}" alt="Imagem de {{recipe.title}}">
                         <div class="info-admin">
-                            <h5>{{item.title}}</h5>
-                            <p>por {{item.author}}</p>
-                            <a href="recipes/{{item.id}}">Visualizar</a>
+                            <h5>{{recipe.title}}</h5>
+                            <p>por {{recipe.author}}</p>
+                            <a href="recipes/{{recipe.id}}">Visualizar</a>
                         </div>
                 </div>
             {% endfor %}

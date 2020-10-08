@@ -1,4 +1,4 @@
-{% extends "admin/layout.njk" %}
+{% extends "layoutAdmin.njk" %}
 
 {% block head %}
 
@@ -10,20 +10,20 @@
 
     <main class="recipe-page">
         <div class="top-show">
-            <h1>Receita: {{recipe.title}}</h1>
-            <a href="/admin/recipes/{{recipe.id}}/edit" class="button">Editar receita</a>
+            <h1>Receita: {{recipes.title}}</h1>
+            <a href="/admin/recipes/{{recipes.id}}/edit" class="button">Editar receita</a>
         </div>
 
         <div class="pages">
-            <div class="page" id="{{recipe.id}}">
+            <div class="page" id="{{recipes.id}}">
                 <div class="card__page-container">
-                    <img src="{{recipe.image}}" alt="Imagem de {{recipe.title}}">
+                    <img src="{{recipes.image}}" alt="Imagem de {{recipes.title}}">
                 </div>
 
             <div class="page-title">
-                <h1>{{recipe.title}}</h1>
-                <p>{{recipe.author}}</p>
-                <p>{{recipe.created_at}}</p>
+                <h1>{{recipes.title}}</h1>
+                <p>{{recipes.author}}</p>
+                <p>{{recipes.created_at}}</p>
             </div>
 
             <div class="page-content">
@@ -32,7 +32,7 @@
                     <button id="meuBotao1" type="button" onclick="showContent_1('ingredients')">Esconder Conteúdo</button>
                     <ul>
                         <div id='ingredients'>
-                        {% for ingredients in recipe.ingredients %}
+                        {% for ingredients in recipes.ingredients %}
                             <li>{{ingredients}}</li>
                         {% endfor %}
                         </div>
@@ -44,7 +44,7 @@
                     <button id="meuBotao2" type="button" onclick="showContent_2('preparation')">Esconder Conteúdo</button>
                     <div id='preparation'>
                         <ul>
-                        {% for preparation in recipe.preparations %}
+                        {% for preparation in recipes.preparations %}
                             <li>{{preparation}}</li>
                         {% endfor %}
                         </ul>
@@ -55,7 +55,7 @@
                     <h2>Informação Adicional</h2>
                     <button id="meuBotao3" type="button" onclick="showContent_3('information')">Esconder Conteúdo</button>
                     <div id="information">
-                        <p>{{recipe.information}}</p>
+                        <p>{{recipes.information}}</p>
                     </div>
                 </div>
 

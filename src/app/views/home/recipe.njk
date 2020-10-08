@@ -11,14 +11,14 @@
     <main class="recipe-page">
 
         <div class="pages">
-            <div class="page" id="{{item.id}}">
+            <div class="page" id="{{recipes.id}}">
                 <div class="card__page-container">
-                    <img src="{{item.image}}" alt="Imagem de {{item.title}}">
+                    <img src="{{recipes.image}}" alt="Imagem de {{recipes.title}}">
                 </div>
 
             <div class="page-title">
-                <h1>{{item.title}}</h1>
-                <p>{{item.author}}</p>
+                <h1>{{recipes.title}}</h1>
+                <p>{{recipes.author}}</p>
             </div>
 
             <div class="page-content">
@@ -27,7 +27,7 @@
                     <button id="meuBotao1" type="button" onclick="showContent_1('ingredients')">Esconder Conteúdo</button>
                     <ul>
                         <div id='ingredients'>
-                        {% for ingredients in item.ingredients %}
+                        {% for ingredients in recipes.ingredients %}
                             <li>{{ingredients}}</li>
                         {% endfor %}
                         </div>
@@ -39,7 +39,7 @@
                     <button id="meuBotao2" type="button" onclick="showContent_2('preparation')">Esconder Conteúdo</button>
                     <div id='preparation'>
                         <ul>
-                        {% for preparation in item.preparation %}
+                        {% for preparation in recipes.preparation %}
                             <li>{{preparation}}</li>
                         {% endfor %}
                         </ul>
@@ -50,7 +50,7 @@
                     <h2>Informação</h2>
                     <button id="meuBotao3" type="button" onclick="showContent_3('information')">Esconder Conteúdo</button>
                     <div id="information">
-                        <p>{{item.information}}</p>
+                        <p>{{recipes.information}}</p>
                     </div>
                 </div>
 

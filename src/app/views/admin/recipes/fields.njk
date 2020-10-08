@@ -39,12 +39,22 @@
     {% if recipe.ingredients %}
         {% for ingredient in recipe.ingredients %}
             <div class="ingredient">
-                <input type="text" value="{{ingredient}}" name="ingredients[]" placeholder="Ingredientes">
+                <input 
+                    type="text" 
+                    value="{{ingredient}}" 
+                    name="ingredients[]" 
+                    placeholder="Ingredientes"
+                >
             </div>
         {% endfor %}
     {% else %}
         <div class="ingredient">
-            <input type="text" value="" name="ingredients[]" placeholder="Ingredientes">
+            <input 
+                type="text" 
+                value="{{ingredient}}" 
+                name="ingredients[]" 
+                placeholder="Ingredientes"
+            >
         </div>
     {% endif %}
 <button type="button" class="add-ingredient">Adicionar ingrediente</button>
@@ -56,12 +66,22 @@
     {% if recipe.preparations %}
         {% for preparation in recipe.preparations %}
             <div class="preparation">
-                <input type="text" value="{{preparation}}" name="preparation[]" placeholder="Modo de preparo">
+                <input 
+                    type="text" 
+                    value="{{preparation}}" 
+                    name="preparation[]" 
+                    placeholder="Modo de preparo"
+                >
             </div>
         {% endfor %}
     {% else %}
     <div class="preparation">
-        <input type="text" value="" name="preparations[]" placeholder="Modo de preparo">
+        <input 
+            type="text" 
+            value="{{preparation}}" 
+            name="preparations[]" 
+            placeholder="Modo de preparo"
+        >
     </div>
     {% endif %}
     <button type="button" class="add-preparation">Adicionar novo passo</button>
@@ -73,7 +93,7 @@
         <textarea 
             name="information"  
             cols="30" 
-            rows="10">
+            rows="10">{{recipe.information}}
         </textarea>
     </div>
 </div>
